@@ -1,0 +1,41 @@
+[어셈블리 프로그래밍 기초 요약 (Assembly Programming - Basic Concepts)]
+
+1. 언어 스펙트럼 (Language Spectrum)
+- 기계어 (Machine Language): 최하위 단계. 0과 1의 이진수로 이루어져 있으며 하드웨어가 직접 실행.
+- 어셈블리어 (Assembly Language): 기계어 명령어를 니모닉(Mnemonic, 예: MOV)으로 일대일 매핑하여 사람이 읽기 쉽게 만든 언어.
+- 고급 언어 (High-Level Language): C, C++, Java 등 인간 친화적이고 복잡한 연산을 간단한 구문으로 작성 가능.
+
+2. 가상 머신 개념 및 계층 구조 (Virtual Machine Concept)
+- Level 4: 고급 언어 (High-level language)
+- Level 3: 어셈블리어 (Assembly language) - 기계어의 단순 번역 (예: MOV AL, 97)
+- Level 2: 명령어 집합 아키텍처 (Instruction Set Architecture, ISA) / 기계어 (01011000 ...)
+- Level 1 / L0: 디지털 논리 및 실체 하드웨어 (CPU, 메모리, 레지스터 등)
+
+3. 데이터 표현 및 진법 (Data Representation & Number Systems)
+- 진법 구조: 2진수(Binary), 8진수(Octal), 10진수(Decimal), 16진수(Hexadecimal)
+- 데이터 저장 단위:
+  * Byte: 8 bits
+  * Word: 16 bits
+  * Doubleword: 32 bits
+  * Quadword: 64 bits
+  * Double quadword: 128 bits
+- 용량 단위: 1 KB (2^10) ~ 1 YB (2^80)
+
+4. 보수 및 부호 있는 정수 (Two's Complement & Signed Integers)
+- 최상위 비트(MSB, Sign Bit): 0이면 양수, 1이면 음수.
+- 2의 보수(Two's Complement) 구하는 법:
+  1) 모든 비트를 반전(NOT)
+  2) 결과에 1을 더함
+- 부호 있는 정수의 범위: -2^(n-1) ~ +2^(n-1)-1 (8비트~128비트)
+
+5. 문자의 표현 (Character Storage)
+- ASCII: 7비트 사용 (128개 영문/기호/제어문자 표현)
+- Extended ASCII: 8비트 사용 (256개 문자 표현)
+- Unicode: 전 세계 언어 지원 (UTF-8, UTF-16, UTF-32)
+  * UTF-8: 1~4바이트 가변 길이, ASCII와 호환, 웹 표준.
+  * UTF-16: 2 또는 4바이트, 윈도우/자바 기본.
+  * UTF-32: 고정 4바이트, 인덱싱 용이하나 메모리 소모 큼.
+
+6. 불리언 연산 (Boolean Operations)
+- 기본 연산: NOT (¬), AND (∧), OR (∨)
+- 연산자 우선순위: 괄호 -> NOT -> AND -> OR
