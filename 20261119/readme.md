@@ -11,8 +11,6 @@
 
 ![실행 결과 화면](images/result.png)
 
-> ⚠️ `images/result.png`는 **직접 실행한 화면을 캡처해서 넣어 주세요.**
-> (`Win + Shift + S` → 캡처 → `images` 폴더에 `result.png`로 저장)
 
 ### 예상 출력 (A = 25, B = 7 입력 시)
 
